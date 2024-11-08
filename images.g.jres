@@ -6,5 +6,13 @@
         "namespace": "myImages.",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "foguinho"
+    },
+    "myImages.image2": {
+        "id": "myImages.image2",
+        "data": "hwQQABAAAAAAAAAAAAAAiAAAAAAAAICIAAAAAAAAiIgAAAAAAACPiAAAAAAAgI+IAAAAAACMr4gAAAAAiDysqszMz484PDyq3b0/PxE6OjMAAAAAqho6MwAAAAAAqj8zAAAAAACgHzEAAAAAAAA6EwAAAAAAAKozAAAAAAAAoKoAAAAAAAAAqg==",
+        "dataEncoding": "base64",
+        "namespace": "myImages.",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "nave"
     }
 }

@@ -1,8 +1,10 @@
-game.onUpdateInterval(200, function () {
+game.onUpdateInterval(100, function () {
     let foguinho = sprites.create(assets.image`foguinho`, SpriteKind.Projectile)
     foguinho.setPosition(
-        Math.randomRange(0, scene.screenWidth()), 0)
-    foguinho.setVelocity(0, 50)    
+        Math.randomRange(64, scene.screenWidth()-64), -8)
+    foguinho.ax = Math.randomRange(-64, 64)
+    foguinho.ay = 32
+
     foguinho.setFlag(SpriteFlag.AutoDestroy, true)
 
     let foguinhos = sprites.allOfKind(SpriteKind.Projectile)
@@ -17,4 +19,6 @@ game.onUpdateInterval(200, function () {
 
 })
 
-
+let nave = sprites.create(assets.image`nave`, SpriteKind.Player)
+nave.setPosition(scene.screenWidth()/2, 100)
+controller.moveSprite(nave,200,0)
